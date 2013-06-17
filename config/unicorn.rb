@@ -1,4 +1,4 @@
-unicorn.rbroot = "/home/deployer/apps/weDevOps/current"
+root = "/home/deployer/apps/weDevOps/current"
 working_directory root
 pid "#{root}/tmp/pids/unicorn.pid"
 stderr_path "#{root}/log/unicorn.log"
