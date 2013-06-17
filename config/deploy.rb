@@ -12,6 +12,9 @@ set :scm, "git"
 set :repository, "git@github.com:dekee/#{application}.git"
 set :branch, "master"
 
+set :default_environment, {
+  'PATH' => "/home/deployer/.rbenv/shims:/home/deployer/.rbenv/bin:$PATH"
+}
 default_run_options[:pty] = true
 ssh_options[:forward_agent] = true
 
